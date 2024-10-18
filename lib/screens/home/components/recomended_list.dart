@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:plant_app/screens/home/components/body.dart';
 import 'package:plant_app/screens/home/components/plant_card.dart';
 
-class RecomendedList extends StatelessWidget {
-  const RecomendedList({
+class RecomendedPlants extends StatelessWidget {
+  const RecomendedPlants({
     super.key,
   });
 
@@ -13,21 +13,21 @@ class RecomendedList extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          PlantCard(
+          RecomendedPlantCard(
             image: "assets/images/image_1.png",
             title: "Samantha",
             country: "Russia",
             price: 440,
             press: () {},
           ),
-          PlantCard(
+          RecomendedPlantCard(
             image: "assets/images/image_2.png",
             title: "Samantha",
             country: "Russia",
             price: 440,
             press: () {},
           ),
-          PlantCard(
+          RecomendedPlantCard(
             image: "assets/images/image_3.png",
             title: "Samantha",
             country: "Russia",

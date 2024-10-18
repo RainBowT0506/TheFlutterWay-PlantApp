@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app/constants.dart';
 
-class PlantCard extends StatelessWidget {
-  const PlantCard({
+class RecomendedPlantCard extends StatelessWidget {
+  const RecomendedPlantCard({
     super.key,
     required this.image,
     required this.title,
