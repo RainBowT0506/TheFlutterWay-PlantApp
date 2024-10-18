@@ -12,14 +12,13 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Column(
         children: <Widget>[
-          Header(size: size),
-          ListHeader(title: "Recomended", press: () {}),
+          Header(),
+          PlantsSection(title: "Recomended", press: () {}),
           RecomendedPlants(),
-          ListHeader(title: "Featured Plants", press: () {}),
+          PlantsSection(title: "Featured Plants", press: () {}),
           FeaturedPlants(),
           SizedBox(height: kDefaultPadding),
         ],

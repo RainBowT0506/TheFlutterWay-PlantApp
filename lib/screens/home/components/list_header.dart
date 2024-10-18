@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app/constants.dart';
 
-class ListHeader extends StatelessWidget {
-  const ListHeader({
+class PlantsSection extends StatelessWidget {
+  const PlantsSection({
     super.key,
     required this.title,
     required this.press,
