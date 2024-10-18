@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_app/screens/detail/detail_screen.dart';
 import 'package:plant_app/screens/home/components/body.dart';
 import 'package:plant_app/screens/home/components/plant_card.dart';
 
@@ -18,23 +19,38 @@ class RecomendedPlants extends StatelessWidget {
             title: "Samantha",
             country: "Russia",
             price: 440,
-            press: () {},
+            press: () {
+              navToDetail(context);
+            },
           ),
           RecomendedPlantCard(
             image: "assets/images/image_2.png",
             title: "Samantha",
             country: "Russia",
             price: 440,
-            press: () {},
+            press: () {
+              navToDetail(context);
+            },
           ),
           RecomendedPlantCard(
             image: "assets/images/image_3.png",
             title: "Samantha",
             country: "Russia",
             price: 440,
-            press: () {},
+            press: () {
+              navToDetail(context);
+            },
           ),
         ],
+      ),
+    );
+  }
+
+  void navToDetail(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => DetailScreen(),
       ),
     );
   }
